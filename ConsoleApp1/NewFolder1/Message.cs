@@ -12,15 +12,15 @@ namespace ConsoleApp1
     {
         [Key]
         public int MessageId { get; set; }
-        public string SenderPhone { get; set; }
-        public string RecepientPhone { get; set; }
+        public int SenderId { get; set; }
+        public int RecepientMessagesId { get; set; }
         public DateTime DateOfSend { get; set; }
         public DateTime TimeOfSend { get; set; }
         public string TextOfMessage { get; set; }
 
-        [ForeignKey("SenderPhone")]
+        [ForeignKey("SenderId")]
         public User Sender { get; set; }
-        [ForeignKey("RecepientPhone")]
-        public Recepient Recepient { get; set; }
+        public ICollection<RecepientMessage> RecepientMessages { get; set; }
+
     }
 }
