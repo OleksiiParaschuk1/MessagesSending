@@ -8,7 +8,7 @@ using System.Threading.Tasks;
 
 namespace ConsoleApp1
 {
-    class RecepientMessage
+    public class RecepientMessage
     {
         [Key]
         public int RecepientMessageId { get; set; }

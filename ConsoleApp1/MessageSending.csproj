@@ -51,14 +51,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Migrations\Configuration.cs" />
-    <Compile Include="NewFolder1\IGetSetInFile.cs" />
-    <Compile Include="NewFolder1\Message.cs" />
-    <Compile Include="NewFolder1\MessagesSendingDbContext.cs" />
+    <Compile Include="Interfces\IGetSetInFile.cs" />
+    <Compile Include="Interfces\IMessageRepository.cs" />
+    <Compile Include="Interfces\IRecepientMessageRepository.cs" />
+    <Compile Include="Interfces\IRecepientRepository.cs" />
+    <Compile Include="Interfces\IRepository.cs" />
+    <Compile Include="Interfces\IUserRepository.cs" />
+    <Compile Include="Model\Message.cs" />
+    <Compile Include="Repository\MessageRepository.cs" />
+    <Compile Include="Model\MessagesSendingDbContext.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="NewFolder1\Recepient.cs" />
-    <Compile Include="NewFolder1\RecepientMessage.cs" />
-    <Compile Include="NewFolder1\User.cs" />
+    <Compile Include="Model\Recepient.cs" />
+    <Compile Include="Model\RecepientMessage.cs" />
+    <Compile Include="Repository\RecepientMessageRepository.cs" />
+    <Compile Include="Repository\RecepientRepository.cs" />
+    <Compile Include="Repository\Repository.cs" />
+    <Compile Include="Model\User.cs" />
+    <Compile Include="Repository\UserRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config">
